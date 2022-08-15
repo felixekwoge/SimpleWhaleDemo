@@ -31,10 +31,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v1
-        # with:
-        #  registry: ghcr.io
-        #  username: ${{ github.actor }}
-        #  password: ${{ secrets.ghcr_TOKEN }}
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.ghcr_TOKEN }}
       -
         name: Build and push
         id: docker_build
