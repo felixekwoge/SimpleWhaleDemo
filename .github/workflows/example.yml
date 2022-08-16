@@ -1,5 +1,9 @@
 name: ci
+<<<<<<< HEAD
 # What triggers the  workflow
+=======
+# What triggers this  workflow
+>>>>>>> feature
 on:
   push:
     branches:
